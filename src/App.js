@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./styles.scss";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
@@ -19,7 +19,7 @@ function App() {
   
   return (
     <div >
-      <BrowserRouter>
+      <HashRouter>
       <Routes>
         <Route path="/">
           <Route
@@ -34,7 +34,7 @@ function App() {
           <Route path="register" element={<Register />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     </div>
   );
 }
