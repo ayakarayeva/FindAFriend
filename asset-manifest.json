@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/FindAFriend/static/css/main.1181761e.css",
+    "main.js": "/FindAFriend/static/js/main.c70677fd.js",
+    "static/media/Add.png": "/FindAFriend/static/media/Add.3277748d466db76a3615.png",
+    "index.html": "/FindAFriend/index.html",
+    "main.1181761e.css.map": "/FindAFriend/static/css/main.1181761e.css.map",
+    "main.c70677fd.js.map": "/FindAFriend/static/js/main.c70677fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1181761e.css",
+    "static/js/main.c70677fd.js"
+  ]
+}
