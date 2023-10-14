@@ -11,6 +11,15 @@ const firebaseConfig = {
   messagingSenderId: "341215718274",
   appId: "1:341215718274:web:2f3cdbd328a96a8b5d3d9b"
 };
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} {
+      allow read, write: if
+          request.time < timestamp.date(2023, 5, 15);
+    }
+  }
+}
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
